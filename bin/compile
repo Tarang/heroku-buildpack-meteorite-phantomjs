@@ -158,6 +158,8 @@ export CPPPATH="$INCLUDE_PATH"
 # run_npm "rebuild"
 # echo "Dependencies installed" | indent
 
+npm version
+
 ############################################
 # install meteorite
 ############################################
