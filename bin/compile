@@ -13,7 +13,7 @@ unset GIT_DIR
 # parse and derive params
 BUILD_DIR=$1
 CACHE_DIR=$2
-LP_DIR=`cd $(dirname $0); cd ..; pwd`
+LP_DIR=`cd $(dirn2ame $0); cd ..; pwd`
 
 [ ! -d $BUILD_DIR ] && mkdir $BUILD_DIR
 [ ! -d $CACHE_DIR ] && mkdir $CACHE_DIR
@@ -77,7 +77,7 @@ echo "No version of Node.js specified in package.json, using latest stable, see:
   echo
 fi
 
-NODE_VERSION=0.10.29
+NODE_VERSION=0.10.30
 echo "Using Node.js version: ${NODE_VERSION}" | indent
 
 # vendor directories
